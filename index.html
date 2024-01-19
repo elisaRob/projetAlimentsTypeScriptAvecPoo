@@ -6,26 +6,30 @@
     <title>Document</title>
     <script src="dist/main.js" defer></script>
     <script src="dist/classes/Aliments.class.js"></script>
+    <script src="dist/classes/Charcuteries.class.js"></script>
+    <script src="dist/classes/Fruits.class.js"></script>
+    <link rel="stylesheet" href="style.css">                     
 </head>
 <body>
-    <div>
+    <div class="premiereDiv">
         Afficher les aliments de
 
         <select class="typesAliments">
-            <option>Toutes</option>
-            <option>Mauvaise</option>
-            <option>Moyenne</option>
-            <option>Bonne</option>
+            <option value="Tous">Toutes</option>
+            <option value="Mauvais">Mauvaise</option>
+            <option value="Moyen">Moyenne</option>
+            <option value="Bon">Bonne</option>
         </select>
 
         Valeur nutritionnel
     </div>
-    <div>
+    <div class="deuxiemeDiv">
         <table>
             <thead>
                 <tr>
                     <td>Nom</td>
                     <td>Lipide</td>
+                    <td>Glucide</td>
                     <td>Protéine</td>
                     <td>Classe</td>
                     <td>Image</td>

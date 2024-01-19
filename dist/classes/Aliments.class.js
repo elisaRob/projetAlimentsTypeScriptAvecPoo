@@ -36,11 +36,12 @@ class Aliments {
     set image(value) {
         this._image = value;
     }
+    afficherValeursNutritive() {
+        console.log("Valeurs nutritionelles : ");
+        console.log("Calories : " + this.nombreDeCalories);
+    }
 }
 //static pour  être accessible de n'importe ou
 //On est dans un attribut static et pour y accéder on est obligé de passer par la classe.
 Aliments.listeAliments = [];
-let aliment1 = new Aliments("Pomme", ClassQqualiteNutrinionnelle.BON, 53, 0.2, 14, 0.3, "pomme.png");
-let aliment2 = new Aliments("Salami", ClassQqualiteNutrinionnelle.MAUVAIS, 270, 26.5, 1.3, 12, "Salami.png");
-console.log(Aliments.listeAliments);
 //# sourceMappingURL=Aliments.class.js.map

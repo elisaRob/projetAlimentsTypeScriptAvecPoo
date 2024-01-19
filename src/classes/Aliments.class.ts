@@ -6,7 +6,7 @@ enum ClassQqualiteNutrinionnelle{
     BON="A"
 }
 
-class Aliments{
+abstract class Aliments{
 
     //static pour  être accessible de n'importe ou
     //On est dans un attribut static et pour y accéder on est obligé de passer par la classe.
@@ -71,8 +71,18 @@ class Aliments{
     set image(value:string) {
         this._image=value
     }
+
+    abstract afficherAliments() : void
+    protected afficherValeursNutritive():void {
+        console.log("Valeurs nutritionelles : ");
+        console.log("Calories : " + this.nombreDeCalories )
+    
+    }
+       
+    
 }
 
-let aliment1 = new Aliments("Pomme",ClassQqualiteNutrinionnelle.BON,53,0.2,14,0.3,"pomme.png")
-let aliment2 = new Aliments("Salami",ClassQqualiteNutrinionnelle.MAUVAIS,270,26.5,1.3,12,"Salami.png");
-console.log(Aliments.listeAliments)
+
+
+
+
